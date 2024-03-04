@@ -88,7 +88,7 @@ main{
     margin: 0 auto;
 }
 .container{
-    background-color: rgb(4, 184, 184);
+    background-color: #8a2be2;
     width: 70vh;
     height: 70vh;
     border-radius: 7vh;
@@ -118,7 +118,7 @@ main{
     align-items: center;
 }
 .container .title h1:hover{
-    color: gray;
+    color: rgb(168, 168, 168);
 }
 
 .container .campos{
@@ -139,10 +139,10 @@ main{
     align-items: center;
     padding-left: 15px;
     font-size: 18px;
-    color: gray;
+    color: rgb(168, 168, 168);
 }
 .container .campos input:focus{
-   background-color: gray;
+   background-color: rgb(168, 168, 168);
    border: none;
    color: white;
 
@@ -179,11 +179,11 @@ main{
     font-size: 3vh;
 }
 .container button:focus{
-    background-color: gray;
+    background-color: rgb(168, 168, 168);
     color: white;
 }
 .container button:hover{
-    background-color: gray;
+    background-color: rgb(168, 168, 168);
     color: white;
 }
 

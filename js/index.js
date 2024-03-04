@@ -13,41 +13,24 @@ fetch('https://fakestoreapi.com/products')
 
             // Preenche o conteúdo da div com informações do produto, incluindo a imagem, título e preço
             produtoDiv.innerHTML = `
-                <img src="${produto.image}" alt="${produto.title}">
-                <h2 class="title">${produto.title}</h2>
+            <a href="../pages/produtosDetalhes.html"><img src="${produto.image}" alt="${produto.title}"></a>
+            <a href="../pages/produtosDetalhes.html?id=${produto.id}" ><h2 class="title">${produto.title}</h2></a>
+                
                 <p class="btn-price"><strong class="price">$${produto.price}</strong></p>
             `;
-
+            
             // Adiciona a div do produto à seção de produtos na página
             produtosDiv.appendChild(produtoDiv);
 
             // Adiciona eventos de mouse para animação quando o usuário passa o mouse sobre o produto
             produtoDiv.addEventListener('mouseover', () => {
-                produtoDiv.style.transform = 'scale(1.1)';
+                produtoDiv.style.transform = 'scale(1.001)';
             });
             produtoDiv.addEventListener('mouseout', () => {
                 produtoDiv.style.transform = 'scale(1)';
             });
         });
     })
-    .catch(error => console.error('Erro:', error));
+    .catch(error => console.error('Erro:', error));// se tiver erro ele informa o erro
 
-//     fetch('https://fakestoreapi.com/products'): Realiza uma requisição HTTP para a URL da API que retorna informações sobre produtos.
-
-// .then(res => res.json()): Converte a resposta da API (que é inicialmente em formato de texto) para um objeto JSON.
-
-// .then(data => { ... }): Manipula os dados obtidos da API dentro desta função.
-
-// const produtosDiv = document.getElementById('produtos');: Obtém a referência para o elemento HTML com o ID “produtos”.
-
-// data.forEach(produto => { ... }): Itera sobre cada objeto de produto retornado pela API.
-
-// const produtoDiv = document.createElement('div');: Cria um novo elemento <div> para representar cada produto.
-
-// produtoDiv.innerHTML = ...: Preenche o conteúdo da div com informações do produto, incluindo a imagem, título e preço.
-
-// produtosDiv.appendChild(produtoDiv);: Adiciona a div do produto à seção de produtos na página.
-
-// produtoDiv.addEventListener('mouseover', ...) e produtoDiv.addEventListener('mouseout', ...): Adiciona eventos de mouse para animações quando o usuário passa o mouse sobre o produto.
-
-// .catch(error => console.error('Erro:', error));: Lida com erros, caso ocorram durante a requisição à API.
+    <a class="info-name" href="../pages/productId.html?id=${product.id}">${product.title}</a>

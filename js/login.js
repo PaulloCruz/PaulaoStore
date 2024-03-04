@@ -60,19 +60,3 @@ btn.addEventListener('click', (event) => {
   }
 });
 
-// const data = [...]: Cria um array chamado “data” contendo objetos com informações de usuários (usuário e senha).
-
-// const btn = document.querySelector("#login");: Obtém a referência para o botão de login na página.
-
-// console.log(data);: Exibe os dados no console (para fins de depuração).
-
-// btn.addEventListener('click', ...): Adiciona um evento de clique ao botão de login.
-
-// event.preventDefault();: Impede o comportamento padrão do botão (recarregar a página).
-
-
-// const user = document.getElementById('user').value; e const password = document.getElementById('password').value;: Obtém os valores digitados nos campos de usuário e senha.
-
-// const login = data.find((obj) => obj.usuario === user && obj.senha === password);: Procura pelos dados de login correspondentes no array “data”.
-
-// if (login) { ... } else { ... }: Verifica se o login foi bem-sucedido e redireciona para a página inicial ou exibe um alerta de erro.

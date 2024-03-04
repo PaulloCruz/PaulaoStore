@@ -66,32 +66,28 @@ fetch('https://fakestoreapi.com/products/categories')
     });
   });
 
+
 // Busca os produtos da categoria selecionada
-function getProdutos(categoria) {
+// CATEGORIA LIMITAR PRODUTOS POR QUANTIDADE
+// https://fakestoreapi.com/products/category/${categoria}
+// https://fakestoreapi.com/products?limit=5
+function getProdutos() {
+  const categoria = document.getElementById('categoriasTipo').value; // pega o tipo da categoria
+  const quantidade = document.getElementById('quantidade').value; // Obtém a quantidade inserida pelo usuário
   const divProdutos = document.getElementById('produtos');
   divProdutos.innerHTML = ''; // Limpa a div
 
   if (categoria === 'semCategoria') {
-    exibirProdutos('https://fakestoreapi.com/products')
+    exibirProdutos(`https://fakestoreapi.com/products?limit=${quantidade}`)
   } else {
-    exibirProdutos(`https://fakestoreapi.com/products/category/${categoria}`)
+    exibirProdutos(`https://fakestoreapi.com/products/category/${categoria}?limit=${quantidade}`)
   }
 }
 
 
-// CATEGORIA LIMITAR PRODUTOS POR QUANTIDADE
-// https://fakestoreapi.com/products?limit=5
 // Preenche o select com as categorias disponíveis
 // Função que é chamada quando o usuário clica no botão
-function getLimite() {
-  const quantidade = document.getElementById('quantidade').value; // Obtém a quantidade inserida pelo usuário
-  const divProdutos = document.getElementById('produtos'); // Obtém a div de produtos pelo seu id
-  divProdutos.innerHTML = ''; // Limpa a div de produtos
 
-  // Faz uma chamada para a API para obter a quantidade especificada de produtos
-  exibirProdutos(`https://fakestoreapi.com/products?limit=${quantidade}`)
-    
-}
 
 // CATEGORIA PREÇO, CRESCENTE E DECRESCENTE
 // https://fakestoreapi.com/products?sort=desc/asc

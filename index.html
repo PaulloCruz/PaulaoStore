@@ -14,7 +14,7 @@
                 <div class="logo"><a href="./index.html"><p>P</p><p>a</p><p>u</p><p>l</p><p>ã</p><h1>o</h1> <h3>S</h3><h3>t</h3><h3>o</h3><h3>r</h3><h3>e</h3></a></div>
 
                 <ul>
-                    
+                    <a href=""></a>
                     <li>
                         <a href="./index.html"><h3>P</h3><h3>r</h3><h3>o</h3><h3>d</h3><h3>u</h3><h3>t</h3><h3>o</h3><h3>s</h3></a>
                     </li>
@@ -35,12 +35,12 @@
         <menu>
             <div class="infos">
                 <!-- ORDENAR POR TIPO -->
-                <select class="categorias" id="categoriasTipo" onchange="getProdutos(this.value)">
+                <select class="categorias" id="categoriasTipo" onchange="getProdutos()">
                 </select>
 
              <!-- LIMITAR QUANTIDADE -->
                 <input class="categorias" type="number" id="quantidade" min="1" placeholder="Qntd de produtos">
-                <button class="categorias" onclick="getLimite()">Buscar produtos</button>
+                <button  class="categorias" onclick="getProdutos()">Buscar produtos</button>
                 
 
             </div>
@@ -50,6 +50,7 @@
             <div id="produtos"></div>
     </main>
     <script src="./js/index.js"></script>
+    <script src="./js/details.js"></script>
     <script src="./js/category.js"></script>
 </body>
 </html> 
