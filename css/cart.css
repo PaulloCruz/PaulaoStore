@@ -13,8 +13,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:rgb(4, 184, 184);
-    box-shadow: 0 0 10px black;
+    background-color: #8a2be2;
 }
 
 .nav-list{
@@ -142,109 +141,27 @@ h1:hover{
 
 /* navbar^^ */
 
-/* menu */
-menu{
-    width: 100%;
-    height: 7vh;
-    background-color: #7e00d6;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    border: none;
-    box-shadow:  rgb(0, 0, 0);
-}
-menu .infos{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items:center;
-}
-menu .infos .categorias{
-    max-width: 5vh;
-    max-width: max-content;
-    border-radius: 1vh;
-    font-family:"Montserrat", sans-serif ;
-    font-size: 16px;
-    border: none;
-    padding-left: 8px;
-    padding-right: 8px;
-    color: gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-menu .infos option{
-    font-family:"Montserrat", sans-serif ;
-    font-size: 16px;
-    color: gray;
-}
-
 /* main */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all 0.5s ease;
-}
-#produtos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    transition: all 0.5s ease;
-    
-}
-.produto {
-    border: 1px solid #ddd;
-    margin: 10px;
-    padding: 10px;
-    max-width: 300px;
-    min-width: 150px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    transition: all 0.5s ease;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.produto:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
-}
-.produto img {
+body{
     width: 100%;
-    object-fit: cover;
-    height: 200px;
-    transition: all 0.5s ease;
+    height: 100%;
+    box-sizing: border-box;
 }
-.produto img:hover {
-    transform: scale(1.1);
-}
-.title{
-    font-family: "Montserrat", sans-serif;
-    font-weight: lighter;
-    width: 100%
-    
-}
-.price{
-    color: gray;
-}
-.btn-price{
-    height: 6vh;
-    width: 15vh;
-    background-color: wheat;
-    border-radius: 3vh;
+main{
+    background-color:  lightgray;
+    height: 90vh;
+    width: 100%;    
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
-.price:hover{
-    color: rgb(53, 53, 53);
-}
-.btn-price:hover{
-    background-color: rgb(255, 211, 128);
+.container{
+    background-color: #7e00d6;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 20px black;
+    transition: all 0.5s ease;
 }
