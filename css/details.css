@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500&display=swap");
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: whitesmoke;
+}
+#product-details {
+    background-color: whitesmoke;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.product-infos{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+}
+.product-infos img {
+  flex: 1;
+}
+.product-infos .details {
+  flex: 2;
+}
+img {
+    object-fit: cover;
+    max-width: 50vh;
+    max-height: 50vh;
+    transition: all 0.5s ease;
+}
+img:hover {
+    transform: scale(1.03);
+}
+.description{
+  display: flex;
+  flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    width: auto;
+    height: auto; 
+    color:black;
+}
+a:hover {
+    color: black;
+    transform:scale(1.015)
+   }
+  .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: lighter;
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
+  .campos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .price {
+    color: gray;
+  }
+  .btn-price {
+    height: 6vh;
+    width: 15vh;
+    background-color: wheat;
+    border-radius: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .price:hover {
+    color: rgb(53, 53, 53);
+  }
+  .btn-price:hover {
+    background-color: rgb(255, 211, 128);
+  }
+
+  .campos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #buy-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5vh;
+  }
+  #buy-button:hover {
+    background-color: #45a049;
+  }
+
+.voltar button{
+  margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #c43f3f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5vh;
+    margin-left: 15px;
+}
+ 

@@ -210,7 +210,7 @@ body {
 }
 .produto:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 .produto img {
   width: 100%;
@@ -229,7 +229,7 @@ a {
   color: rgb(168, 168, 168);
 }
 a:hover {
-  color: rgb(62, 62, 62);
+  color: rgb(168, 168, 168);
   transform:scale(1.015)
 }
 .title {

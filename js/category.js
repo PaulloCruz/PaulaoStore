@@ -21,8 +21,9 @@ function exibirProdutos(url){
 
             // Preenche o conteúdo da div com informações do produto, incluindo a imagem, título e preço
             produtoDiv.innerHTML = `
-                <img src="${produto.image}" alt="${produto.title}">
-                <h2 class="title">${produto.title}</h2>
+            <a href="../pages/produtosDetalhes.html?id=${produto.id}"><img src="${produto.image}" alt="${produto.title}"></a>
+            <a href="../pages/produtosDetalhes.html?id=${produto.id}" ><h2 class="title">${produto.title}</h2></a>
+                
                 <p class="btn-price"><strong class="price">$${produto.price}</strong></p>
             `;
 
@@ -31,7 +32,7 @@ function exibirProdutos(url){
 
             // Adiciona eventos de mouse para animação quando o usuário passa o mouse sobre o produto
             produtoDiv.addEventListener('mouseover', () => {
-                produtoDiv.style.transform = 'scale(1.1)';
+                produtoDiv.style.transform = 'scale(1.01)';
             });
             produtoDiv.addEventListener('mouseout', () => {
                 produtoDiv.style.transform = 'scale(1)';

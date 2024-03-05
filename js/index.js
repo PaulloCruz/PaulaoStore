@@ -13,11 +13,15 @@ fetch('https://fakestoreapi.com/products')
 
             // Preenche o conteúdo da div com informações do produto, incluindo a imagem, título e preço
             produtoDiv.innerHTML = `
-            <a href="../pages/produtosDetalhes.html"><img src="${produto.image}" alt="${produto.title}"></a>
+            <a href="../pages/produtosDetalhes.html?id=${produto.id}"><img src="${produto.image}" alt="${produto.title}"></a>
             <a href="../pages/produtosDetalhes.html?id=${produto.id}" ><h2 class="title">${produto.title}</h2></a>
                 
                 <p class="btn-price"><strong class="price">$${produto.price}</strong></p>
+               
+                
             `;
+
+            
             
             // Adiciona a div do produto à seção de produtos na página
             produtosDiv.appendChild(produtoDiv);
@@ -33,4 +37,3 @@ fetch('https://fakestoreapi.com/products')
     })
     .catch(error => console.error('Erro:', error));// se tiver erro ele informa o erro
 
-    <a class="info-name" href="../pages/productId.html?id=${product.id}">${product.title}</a>
